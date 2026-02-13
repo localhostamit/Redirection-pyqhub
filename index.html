@@ -1,129 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moving to PYQHUB.tech</title>
-    
-    <meta http-equiv="refresh" content="3;url=https://pyqhub.tech">
+  <meta charset="UTF-8" />
+  <title>PyqHub is Moving | PYQHUB.TECH</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        :root {
-            --primary-color: #2563eb; /* Blue */
-            --bg-color: #f8fafc;
-            --text-color: #1e293b;
-            --card-bg: #ffffff;
-        }
+  <!-- SEO Meta -->
+  <meta name="description" content="PyqHubs.in is now available on PYQHUB.TECH. We are migrating our services. You will be redirected automatically." />
+  <meta name="keywords" content="PyqHub, PYQHUB, Previous Year Questions, PYQ website, pyqhub.tech, pyqhubs.in" />
+  <meta name="author" content="PyqHub Team" />
+  <meta name="robots" content="index, follow" />
 
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            font-family: system-ui, -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-        }
+  <!-- Open Graph -->
+  <meta property="og:title" content="PyqHub is Moving to PYQHUB.TECH" />
+  <meta property="og:description" content="We are shifting from pyqhubs.in to pyqhub.tech. You will be redirected shortly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.pyqhub.tech/" />
 
-        .container {
-            text-align: center;
-            background: var(--card-bg);
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            max-width: 500px;
-            width: 90%;
-        }
+  <!-- Auto Redirect -->
+  <meta http-equiv="refresh" content="6; url=https://www.pyqhub.tech/" />
 
-        h1 {
-            margin-top: 0;
-            font-size: 1.8rem;
-            color: #0f172a;
-        }
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --primary: #6366f1;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --glow: rgba(99, 102, 241, 0.5);
+    }
 
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #475569;
-            margin-bottom: 2rem;
-        }
+    * {
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+    }
 
-        .loader {
-            width: 40px;
-            height: 40px;
-            border: 4px solid #e2e8f0;
-            border-top: 4px solid var(--primary-color);
-            border-radius: 50%;
-            margin: 0 auto 1.5rem auto;
-            animation: spin 1s linear infinite;
-        }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
 
-        .btn {
-            display: inline-block;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: background-color 0.2s;
-        }
+    .card {
+      background: linear-gradient(180deg, rgba(17,24,39,0.9), rgba(2,6,23,0.95));
+      border-radius: 16px;
+      padding: 32px 24px;
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5), 0 0 25px var(--glow);
+      border: 1px solid rgba(99,102,241,0.25);
+      backdrop-filter: blur(10px);
+    }
 
-        .btn:hover {
-            background-color: #1d4ed8;
-        }
+    .logo {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: white;
+    }
 
-        .timer-text {
-            font-size: 0.9rem;
-            color: #64748b;
-            margin-top: 1.5rem;
-        }
+    .badge {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(99,102,241,0.15);
+      color: #c7d2fe;
+      font-size: 0.8rem;
+      border: 1px solid rgba(99,102,241,0.35);
+    }
 
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+    h1 {
+      margin: 20px 0 10px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    .redirect {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #c7d2fe;
+    }
+
+    .btn {
+      margin-top: 22px;
+      display: inline-block;
+      padding: 12px 18px;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      box-shadow: 0 8px 25px rgba(99,102,241,0.4);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(99,102,241,0.6);
+    }
+
+    footer {
+      margin-top: 24px;
+      font-size: 0.75rem;
+      color: #64748b;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.3rem;
+      }
+      .logo {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <div class="container">
-        <div class="loader"></div>
-        
-        <h1>We've Moved!</h1>
-        <p>This website is now part of <strong>Pyqhub.tech</strong>. We are transferring you to our new home.</p>
-        
-        <a href="https://www.pyqhub.tech" class="btn">Go to PYQHUB.tech now</a>
-        
-        <div class="timer-text">Redirecting automatically in <span id="countdown">3</span> seconds...</div>
+  <div class="card">
+    <div class="logo">PYQHUB</div>
+    <div class="badge">Domain Migration Notice</div>
+
+    <h1>We’ve moved to <br> PYQHUB.TECH 🚀</h1>
+
+    <p>
+      <strong>pyqhubs.in</strong> is currently being migrated.  
+      Our official and active platform is now:
+    </p>
+
+    <p><strong>https://www.pyqhub.tech</strong></p>
+
+    <div class="redirect">
+      You will be redirected automatically in 6 seconds...
     </div>
 
-    <script>
-        // Set the destination URL
-        const newUrl = "https://pyqhub.tech";
-        
-        // Countdown duration in seconds
-        let timeLeft = 3;
-        
-        const countdownElement = document.getElementById('countdown');
+    <a class="btn" href="https://www.pyqhub.tech/">Go to PYQHUB.TECH Now</a>
 
-        // Update the countdown every second
-        const timer = setInterval(function() {
-            timeLeft--;
-            countdownElement.textContent = timeLeft;
+    <footer>
+      © <span id="year"></span> PyqHub. All rights reserved.
+    </footer>
+  </div>
 
-            if (timeLeft <= 0) {
-                clearInterval(timer);
-                window.location.href = newUrl;
-            }
-        }, 1000);
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
-        // Safety fallback: Redirect after 3.5 seconds just in case the interval hangs
-        setTimeout(function() {
-            window.location.href = newUrl;
-        }, 3500);
-    </script>
 </body>
 </html>
